@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Hangman {
-
 	public static void main(String [] args) {
 		Scanner in = new Scanner(System.in);
 
@@ -22,7 +21,6 @@ public class Hangman {
 		System.out.println(Word.showLetters(word, letters));
 
 		while(!Word.allDone(word, letters) && guessLimit > 0) {
-
 			System.out.println("Guess a letter:");
 			// Avoids issues with case sensitivity
 			char guess = Character.toUpperCase(in.next().charAt(0));

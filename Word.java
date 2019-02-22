@@ -1,5 +1,4 @@
 public class Word {
-
 	public static boolean containsLetter(String word, char letter) {
 		for(int i = 0; i < word.length(); i++) {
 			if (word.charAt(i) == letter)
@@ -28,7 +27,6 @@ public class Word {
 				count++;
 			}
 		}
-
 		// Ignores whitespace
 		word = word.replaceAll("\\s+", "");
 		if(count == word.length()) {
