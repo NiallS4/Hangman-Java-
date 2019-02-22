@@ -1,7 +1,6 @@
-public class Word
-{
-	public static boolean containsLetter(String word, char letter)
-	{
+public class Word {
+	
+	public static boolean containsLetter(String word, char letter) {
 		for(int i = 0; i < word.length(); i++) {
 			if (word.charAt(i) == letter)
 				return true;
@@ -9,8 +8,7 @@ public class Word
 		return false;
 	}
 
-	public static String showLetters(String word, String guesses)
-	{
+	public static String showLetters(String word, String guesses) {
 		String locations = "";
 		for(int i = 0; i < word.length(); i++) {
 			if(containsLetter(guesses, word.charAt(i))) {
@@ -23,8 +21,7 @@ public class Word
 		return locations;
 	}
 
-	public static boolean allDone(String word, String guesses)
-	{
+	public static boolean allDone(String word, String guesses) {
 		int count = 0;
 		for(int i = 0; i < word.length(); i++) {
 			if(containsLetter(guesses, word.charAt(i))) {
@@ -40,8 +37,7 @@ public class Word
 		return false;
 	}
 
-	public static String getRandomWord()
-	{
+	public static String getRandomWord() {
 		String [] words = {
 				"Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
 				"Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho",

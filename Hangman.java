@@ -8,10 +8,9 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Hangman
-{
-	public static void main(String [] args)
-	{
+public class Hangman {
+
+	public static void main(String [] args) {
 		Scanner in = new Scanner(System.in);
 
 		String word = Word.getRandomWord().toUpperCase();
