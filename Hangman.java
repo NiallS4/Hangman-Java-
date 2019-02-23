@@ -1,9 +1,3 @@
-/*
-Hangman game (Java)
-22 February 2019
-Niall Stapleton
-*/
-
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
