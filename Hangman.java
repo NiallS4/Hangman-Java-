@@ -16,9 +16,13 @@ public class Hangman {
 		int guessLimit = 10;
 		String letters = "";
 		List<Character> guessedLetters = new ArrayList<Character>();
+		String alphabet = "A B C D E F G H I J K L M\nN O P Q R S T U V W X Y Z";
 
 		System.out.println("The word is:");
 		System.out.println(Word.showLetters(word, letters));
+		System.out.println();
+		System.out.println(alphabet);
+		System.out.println();
 
 		while(!Word.allDone(word, letters) && guessLimit > 0) {
 			System.out.println("Guess a letter:");
@@ -39,7 +43,10 @@ public class Hangman {
 			}
 			
 			letters += String.valueOf(guess);
+			alphabet = alphabet.replaceAll(String.valueOf(guess), "#");
 			System.out.println(Word.showLetters(word, letters));
+			System.out.println();
+			System.out.println(alphabet);
 			System.out.println();
 		}
 
